@@ -32,3 +32,5 @@ RUN sudo curl -o runner.tar.gz -sSL https://github.com/actions/runner/releases/d
 
 ENTRYPOINT ["./entrypoint.sh"]
 CMD ["./bin/Runner.Listener", "run", "--startuptype", "service"]
+
+#CMD [ "bash", "-c", "./config.sh --url ${RUNNER_URL} --token ${RUNNER_TOKEN} --name runner --runnergroup Default --labels linux,self-hosted --work /tmp/runner; ./run.sh; sleep infinity"]
