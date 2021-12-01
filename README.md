@@ -54,7 +54,6 @@ docker-compose up -d --scale runner=5
 - [https://github.com/shivammathur/setup-php](https://github.com/shivammathur/setup-php)
 - [All Contributors](../../contributors)
 
-Please see the [contributing guide](https://def-studio.github.io/pest-plugin-laravel-expectations/developers/contribute) for details on how to contribute to this plugin.
 
 ## Security Vulnerabilities
 
