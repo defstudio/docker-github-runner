@@ -9,7 +9,6 @@ _LABELS=${LABELS:-"linux,self-hosted"}
 
 deregister_runner() {
   echo "Caught SIGTERM. Deregistering runner"
-  echo "Obtaining the token of the runner"
   if [[ -n "${ACCESS_TOKEN}" ]]; then
     _TOKEN=$(ACCESS_TOKEN="${ACCESS_TOKEN}" bash /home/runner/token.sh)
     RUNNER_TOKEN=$(echo "${_TOKEN}" | jq -r .token)
@@ -24,10 +23,7 @@ configure_runner(){
   if [[ -n "${ACCESS_TOKEN}" ]]; then
     echo "Obtaining the token of the runner"
     _TOKEN=$(ACCESS_TOKEN="${ACCESS_TOKEN}" bash /home/runner/token.sh)
-    echo ${_TOKEN}
     RUNNER_TOKEN=$(echo "${_TOKEN}" | jq -r .token)
-    echo ${RUNNER_TOKEN}
-    echo "done"
   fi
 
   echo "Configuring"
