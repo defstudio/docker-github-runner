@@ -20,6 +20,8 @@ services:
       LABELS: "${LABELS}"
     security_opt:
       - label:disable
+    volumes:
+      - '/var/run/docker.sock:/var/run/docker.sock'
 ```
 
 - add an `.env` file to store settings
