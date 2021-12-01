@@ -1,3 +1,5 @@
+![Docker Pulls](https://img.shields.io/docker/pulls/defstudio/github-runner)
+
 # Docker github runner
 
 A docker image optimized for running [shivammathur/setup-php](https://github.com/shivammathur/setup-php) actions in a docker self-hosted runner, but not limited to it. Custom docker images and services can be handled in the workflow as well
