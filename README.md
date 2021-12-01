@@ -1,6 +1,6 @@
 # Docker github runner
 
-This package is optimized to execute [shivammathur/setup-php](https://github.com/shivammathur/setup-php) action in a docker self-hosted runner, but it is not limited to it. Custom docker images and services can be run as well
+A docker image optimized for running [shivammathur/setup-php](https://github.com/shivammathur/setup-php) actions in a docker self-hosted runner, but not limited to it. Custom docker images and services can be handled in the workflow as well
 
 ### docker image
 
