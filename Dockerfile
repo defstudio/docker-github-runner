@@ -3,7 +3,7 @@ FROM shivammathur/node:latest
 LABEL maintainer="fabio.ivona@defstudio.it"
 
 
-ARG RUNNER_VERSION='2.286.0'
+ARG RUNNER_VERSION='2.286.1'
 ARG ORG=foo
 ARG ACCESS_TOKEN=tkn
 
